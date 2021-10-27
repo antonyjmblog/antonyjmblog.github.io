@@ -1,0 +1,409 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><style data-href="/styles.4df09e6e322d4240db63.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}body{background-color:#0a192f;color:#ccd6f6}a{color:#64ffda}h1{color:#e6f1ff}blockquote{color:#64ffda}.gatsby-highlight pre[class*=language-]{border-radius:.3em}code[class*=language-],pre[class*=language-]{color:#f8f8f2;text-shadow:0 1px rgba(0,0,0,.3);font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto;border-radius:.3em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#272822}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#778090}.token.punctuation{color:#f8f8f2}.namespace{opacity:.7}.token.constant,.token.deleted,.token.property,.token.symbol,.token.tag{color:#f92672}.token.boolean,.token.number{color:#ae81ff}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#a6e22e}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url,.token.variable{color:#f8f8f2}.token.atrule,.token.attr-value,.token.function{color:#e6db74}.token.keyword{color:#f92672}.token.important,.token.regex{color:#fd971f}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}pre[class*=language-].line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}pre[class*=language-].line-numbers>code{position:relative;white-space:inherit}.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:0;font-size:100%;left:-3.8em;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-ms-user-select:none;user-select:none}.line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.command-line-prompt{border-right:1px solid #999;display:block;float:left;font-size:100%;letter-spacing:-1px;margin-right:1em;pointer-events:none;-webkit-user-select:none;-ms-user-select:none;user-select:none}.command-line-prompt>span:before{color:#999;content:" ";display:block;padding-right:.8em}.command-line-prompt>span[data-user]:before{content:"[" attr(data-user) "@" attr(data-host) "] $"}.command-line-prompt>span[data-user=root]:before{content:"[" attr(data-user) "@" attr(data-host) "] #"}.command-line-prompt>span[data-prompt]:before{content:attr(data-prompt)}</style><meta name="generator" content="Gatsby 2.21.37"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="icon" href="/favicon-32x32.png?v=9c7397403d9d6ab31bc35c959599238f"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=9c7397403d9d6ab31bc35c959599238f"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=9c7397403d9d6ab31bc35c959599238f"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=9c7397403d9d6ab31bc35c959599238f"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=9c7397403d9d6ab31bc35c959599238f"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=9c7397403d9d6ab31bc35c959599238f"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=9c7397403d9d6ab31bc35c959599238f"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=9c7397403d9d6ab31bc35c959599238f"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=9c7397403d9d6ab31bc35c959599238f"/><title data-react-helmet="true">Emotion Analysis using Machine Learning Part-2 | Antony&#x27;s Blog</title><meta data-react-helmet="true" name="description" content="Result of the previous post"/><meta data-react-helmet="true" property="og:title" content="Emotion Analysis using Machine Learning Part-2"/><meta data-react-helmet="true" property="og:description" content="Result of the previous post"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="antonyjm462"/><meta data-react-helmet="true" name="twitter:title" content="Emotion Analysis using Machine Learning Part-2"/><meta data-react-helmet="true" name="twitter:description" content="Result of the previous post"/><link as="script" rel="preload" href="/webpack-runtime-83cf6434f4daf4b28b58.js"/><link as="script" rel="preload" href="/framework-81e6052b3504df28bf0b.js"/><link as="script" rel="preload" href="/styles-ae6d046c35c187471a06.js"/><link as="script" rel="preload" href="/app-34ca29c9931feaab74f2.js"/><link as="script" rel="preload" href="/commons-b32845a8a656907c13ef.js"/><link as="script" rel="preload" href="/fab8c9364b01cebfd3503fc18011994750f493ff-d25fbae8f7d6eabbd1ba.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-6158fc8786a9c9dce156.js"/><link as="fetch" rel="preload" href="/page-data/week_2/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0"><a style="box-shadow:none;color:inherit" href="/">Antony&#x27;s Blog</a></h3></header><main><article><header><h1 style="margin-top:1.75rem;margin-bottom:0">Emotion Analysis using Machine Learning Part-2</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem">June 22, 2020</p></header><section><h2>Emotion Analysis using Machine Learning</h2>
+<p><code class="language-text">2nd week of blogging</code></p>
+<h3>The Machine Learning models used are :</h3>
+<h4>SGDClassifier</h4>
+<ul>
+<li>loss=‘hinge’ as hyperparameter </li>
+<li>The model used because it converges faster than other descent techniques</li>
+</ul>
+<p>Results:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">Model Performance metrics:
+------------------------------
+Accuracy: 0.8486
+Precision: 0.8429
+Recall: 0.8486
+F1 Score: 0.8411</code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">Model Classification report:
+------------------------------
+              precision    recall  f1-score   support
+
+       Anger       0.72      0.61      0.66      1459
+         Bad       0.38      0.18      0.24      1810
+      Digust       0.58      0.37      0.45       206
+        Fear       0.92      0.88      0.90     12716
+       Happy       0.71      0.90      0.80      7672
+         Sad       0.92      0.92      0.92     16902
+    Surprise       0.62      0.39      0.48       844
+
+    accuracy                           0.85     41609
+   macro avg       0.69      0.61      0.64     41609
+weighted avg       0.84      0.85      0.84     41609</code></pre></div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/989c7cba2e231992224014743af046af/00b70/clf.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 81.75675675675677%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsSAAALEgHS3X78AAAD/UlEQVQ4y0WU7U9bZRjG+0H96Df/CGgpLX07bCwrTJNFyXwlM8sgIRtuE6dsgIOFZIq8dCAM0E2zGJbM+GF+VefQuShTBwwGAjoYG5Sy0hdaaEvfaAs/73M240nunOckz3Pd131d13N0isOBUrwLpbyavW8e53RDE41nmqlvPEPd6QbeP9XAyboGjp+sp7auUepD3pN389kWjp+oxeGwUVTkxGbbjaI40DnsNqxKCYZT13nRNcFaNEMqA/H0DptpCMa2pXa0ty+yzbR7kwerSXaA8XuzOOwm9MYqzJaXKVYs6OwCuHuPk3PfjDNww80jXxxvKE0kkWUjnsEbTjO/mmBweIVro6vMLseYf7xJVhBH7v6F3WrEuKsWs+NVFIcZndVqpbS0FL8/wFZmh5G5MBMLG6S2ssRTWTzBBLfnQigdd6j4YpL7K1HcgTiJLfhjdFIDNL1Uj2XPWyh2AbTZbAJYxpw7IGPlhGGCBV+ScTk4sRLDs5ZienmTzh8W+fwXD2OPokx7YmzLyGP3ZrCZDVhfP4tt30EUm+kJ4F6nkzszyyz4k4QjKZbX4rQOzdP76yJriRwhqSV/nDkZ9dtRLz/NBJFhGJ2Y0gCLD5/Dsf9tHJbC/0YuY14YhuLbROJZgmLM8FKEodkAPReHuXx1jEVp9lCYT7hj/C3A6jM+NYOlUM++Y22UHDiMvUgAzWYzTmcpHq9f3N1hPZpiPZbWXHzwMMjzLzRgVrqIpLYRnwhuJAnJni2ZeWR8iiKjngMfuCh7o0rYGlWGFkrLyvAGQqRlU1ROxZI57YBvLUF7903au36mu+8mg1+PEFhPE4ykNQ3vTs5gMuRT2dzN/ooqLCbjEw2d4rL7sU+c2yYs3TckgFGxUS31mb3v49nnjkrWPiKWypGUzCQzamymKBTA2o97ee1QNUWFTwE1hv4w6Rwau00ZLynjqw3U9ZI43tk1JHWD9o7v+GpwmJzGcBaDPo+mjgEOVh7BVFiAzmKxiIZOljw+yZ2YorKTQMeSW1IZTc+NzadM/1nlGZ2Ib2nRvqempjHk59HafZFDVUcoNBb8n0OPN0hCrlpI9AnHMnL1cjJeFv9GGreEe3ghzPVxD590fE/PpVv85o5z5cc/0Qugq/cSVdU1GFVANTYqw0Aopjm7nkAcRRNd5eWP7rCwluXLES/XpsMkZJNkm47fA9RfvaUBXrp8hZpj71JgMKh32U5JSQmdrm76Bi5y/tN+unoHuND/mVad3f20nu+jprmD2hYXba4LtLT1UNnkouJEI2rsjta8wyvl5fLXKUKnKIr8ghwirh6DdFC7FBQYZP3kOz8vT1ubZRyTlF6fr2llLtBjNZtQz6tAqnTq+l/OrYsYTV49hwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="fig:"
+        title="fig:"
+        src="/static/989c7cba2e231992224014743af046af/fcda8/clf.png"
+        srcset="/static/989c7cba2e231992224014743af046af/12f09/clf.png 148w,
+/static/989c7cba2e231992224014743af046af/e4a3f/clf.png 295w,
+/static/989c7cba2e231992224014743af046af/fcda8/clf.png 590w,
+/static/989c7cba2e231992224014743af046af/00b70/clf.png 733w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h4>LogisticRegression</h4>
+<ul>
+<li>penalty=‘l2’, C=1 as hyperparameter</li>
+<li>The model used because its simplest model</li>
+</ul>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">Model Performance metrics:
+------------------------------
+Accuracy: 0.8488
+Precision: 0.8477
+Recall: 0.8488
+F1 Score: 0.8469</code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">Model Classification report:
+------------------------------
+              precision    recall  f1-score   support
+
+       Anger       0.75      0.62      0.68      1459
+         Bad       0.39      0.40      0.40      1810
+      Digust       0.57      0.35      0.44       206
+        Fear       0.91      0.88      0.89     12716
+       Happy       0.78      0.85      0.81      7672
+         Sad       0.90      0.93      0.91     16902
+    Surprise       0.60      0.38      0.46       844
+
+    accuracy                           0.85     41609
+   macro avg       0.70      0.63      0.66     41609
+weighted avg       0.85      0.85      0.85     41609</code></pre></div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/a1682a723f48e5861f0932f6ab3bce7d/13e20/reg.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 80.4054054054054%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsSAAALEgHS3X78AAAD6UlEQVQ4y02U+09TZxjHm+yPkdIL6+2cMqrlKrKyn5xxLnHGZIXI5CooUOYStpG4GHEkjoQtggIN2xJZTBbddBfEISYOcRN0tAIF6oHS9rTn9H7hu+c9dZeTvDnvyXmfz/t9nu/zviorz8P6xn7wjpOoPOxEa3tnYbR14HRzK5qa23DqdOHd1NwBZ1M7TjW3o7unF+8cexcmowlGYwV4vhRWKw8VbzHBbKtG8Zmf8Pbni4gnckikAYneUhIQxAyC8h5CUg5+MYe552F4txNgz7h7Cvv2FUFT0gCO209ADirObIK9+hD6v1nG0O01zKyE8MgXhZzMISRnsbGbhIcA86sRLKxLeLwaheelrACvjbtRVKRGia0LFu5AAWg0GuGor0c6kYQQTaPl2z9x+Zc1ZLM5ROIZPN+M4oFXxMW7K5heFPDCL8O3E0OegKPXJxWgoe4jcKXlsPIWqEwmE9501GODFq0GUvjuSQC3l4NY2JLwBwVvksJlfww/PAvinkfEnCeCZfr3f4Xc0QHwZZX/AWvrHJhf2sbSRgxiNEUpxtB/6xncv/uRJinhRB7rgozF9Si+nFnD7EpQAY6Nk0K1Grb3L4KzVcDKMSClzBSu78jYjmQRprpthdOY35Tw44IfH1+4A/eNJwhIWXiFONUyihWhUMPrE24FWNs2hNIDVeAZUK/Xw0HAUERGnOTsigmEpbQS8OusFypVI44eH1O+JTJKCMbJ8RT2XilUE/CIaxhl5dXgLeaCKfX1byESS4E8oMVMZQ5ZCvD6RFwY/BmXrsyi/7MZTE0vIRzPYzuc/LeGDNgwMAJbeRU4BmQpM4W7oqS0ylYgjkAkrWwgJbJK4Pd3PFC91oXjjTeU75CUUTZkLhcXq3Fu8CrsVTWwKEDTK4VySmloMZZDlExIZvdogzylmcfTv4L44uojDA3fR0vLBCanHirg0WuFlAeujKOCAc0ENBgMZIoDgSAppNMhUn1kUsYUysmsUtNoLKMAbt5coJo60Oj8qgAcGyeFxbg84kZlVXUByNqGKRTpnDE17GQIYprU5kkpmUCOe8jduRcR3Hrgw+DQXYxNP8bMyyz6Lo2gRKvB8OgUqmsOwvyPQlZDOZkB8agHk/BH8kr/xahQm6EMloQUJh8KuLcaQ4Ls/c0Xx6ezO3B+MgyTXouJr6dRc7C2AOQ4Dna7nW4PF3r7zqOtqxed3X1w9X2IHtd5nDnnQmuXCyc+6EJDazc6OnvgbDmLI01nUXf4GNhd8N6Jkygrs4GxVFarVZloNBrodFrolaGDVqtVhlpdBB2lZSjRoYTUaGnd63odDDS3kKEsnmXJs2uQ5n8Dfq+DfwGfs8EAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="fig:"
+        title="fig:"
+        src="/static/a1682a723f48e5861f0932f6ab3bce7d/fcda8/reg.png"
+        srcset="/static/a1682a723f48e5861f0932f6ab3bce7d/12f09/reg.png 148w,
+/static/a1682a723f48e5861f0932f6ab3bce7d/e4a3f/reg.png 295w,
+/static/a1682a723f48e5861f0932f6ab3bce7d/fcda8/reg.png 590w,
+/static/a1682a723f48e5861f0932f6ab3bce7d/13e20/reg.png 741w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p><code class="language-text">SGDClassifier and LogisticRegression has the accuracy 0.8486.</code></p>
+<h4>MultinomialNB:</h4>
+<ul>
+<li>
+<p>Naive Bayes family of algorithms is popular machine learning algorithms for creating text classification models.</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">Model Performance metrics:
+------------------------------
+Accuracy: 0.7892
+Precision: 0.7725
+Recall: 0.7892
+F1 Score: 0.7636</code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">Model Classification report:
+------------------------------
+          precision    recall  f1-score   support
+
+   Anger       0.80      0.24      0.37      1459
+     Bad       0.38      0.11      0.17      1810
+  Digust       0.00      0.00      0.00       206
+    Fear       0.85      0.85      0.85     12716
+   Happy       0.79      0.74      0.76      7672
+     Sad       0.77      0.94      0.84     16902
+Surprise       0.67      0.07      0.12       844
+
+accuracy                           0.79     41609
+macro avg       0.61      0.42      0.44     41609
+weighted avg       0.77      0.79      0.76     41609</code></pre></div>
+</li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/3cbba2ed660e762217312a4cc95d328f/c54b3/nb.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 80.4054054054054%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsSAAALEgHS3X78AAAD0UlEQVQ4y2WT60+bZRjG+XOUtvRED5S2HAQM21zEjMM4DF1mskWyGSYThFQz9ZMfNH7aYqKJH5wmhKkjCww3F6AcJnMoA8KxJ9rSQg+0L7SlLT+ft7BF44frvZ/ceZ4r131d91tkNBqwlFv56tshvv9lgscTM0xOPcE5/YRx5yw/P5jk7ugkD8dn+HXMSX3/Hc4M3OH3qTnuj4xRWWVDqapDra7HbC6lyGgwUG61cc+5xlN3GikNmRxkgXQePJEcrt0sibR8ztJ4e5GWbxZJiAvBUITaGjtKbTMlpW2UmbXHhHZ7BQsrbnalHJ7wPt6dFMlUlr2DLH9uxJldjfHHWozx5QjXB5fou7tMPH2E2xfktSorJZZONNZ3MBvVFBkKhHbWXV4ODo/YCEpsbEuC7JCYlGF2JcrE4i6PF3YYnQ/hGF7h85E1Yqk8Lm+AmqpyNNWX0NddxmwoeUFYweKaj3gKYvtZ4ge5AnlSzLy0JfHcmyS8d8iKL0nteyPUXx0hIuXxBcNU2y3oT1/GeLYLk151PLJNKJxfdrGTyJEQypKpQyQxcnz/kOeePRbccZJifJc/galpCEvLENvRDO6tINU2C+ZzXViarmHUKikqLdVjr6hg3e0nLcJIio8kIAcTiqZovDhYwJbwNpLMMjobYOxJAMGPxx+i0lpGZdv71HR+gEEjCHU63UsPhSj29jMFpLLySAk0tlto7bdYcUfFBBm8uyl8kVSBcFN4WCEIT128zhvv3kCvVpx4KBRuev0I2wSZWBFxW/ZQPk/O+bn3aJN2xwSdN51ML0dZEl6mcscKbRYzjVd6aOnqRatS/DdlWWEsmRbInKyN8DNzxLpI3tA5jOHtYR7MBZjfiCIWAJcvgLXMTOfVXi51D6D+N+ELhVJK9jDPfiZfqLsi3WAkzbPVKI9mfJw+8yUNb31NRPS3tnfEMpu40t1PV48DlbJYDqUUm83O2olCOeXjpLOFGo6lRDgHZPJHeP1Ril+5gUrxIcGwhDewjdlk4lrPAN29n6BUvPp/hTFJXpdcgVzew7nNPZyrcR6Kv+T+32E++/EpXww+I5TIs+rZxmg00vPRx/Q5PkVRfEJos9lYXt0opBvYSRQQSxwQikn89leQ4bktfprx8MO0h9tTLr6bdeMSayTvrkzY1+9gwHGTYpnQJCSXlVloam6ho+MCrW3tAh20tcu4QENTq0AbZ8+dL+D1Nxs51dBMS2u7eHMe+X1tbZ1ALbJ9RWazudDUaDRo1Orj+hJqYbSCEpUSnVaDXqdFJ3qloqrFXa3oye/lKWXI538AJ0WTEwelcCMAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="fig:"
+        title="fig:"
+        src="/static/3cbba2ed660e762217312a4cc95d328f/fcda8/nb.png"
+        srcset="/static/3cbba2ed660e762217312a4cc95d328f/12f09/nb.png 148w,
+/static/3cbba2ed660e762217312a4cc95d328f/e4a3f/nb.png 295w,
+/static/3cbba2ed660e762217312a4cc95d328f/fcda8/nb.png 590w,
+/static/3cbba2ed660e762217312a4cc95d328f/c54b3/nb.png 727w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h4>Pipeline with CountVectorizer, TfidfTransformer, MultinomialNB:</h4>
+<ul>
+<li>
+<p>As pipeline often gives promising results to the initial model itself.</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">Model Performance metrics:
+------------------------------
+Accuracy: 0.7225
+Precision: 0.7134
+Recall: 0.7225
+F1 Score: 0.6791</code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">Model Classification report:
+------------------------------
+          precision    recall  f1-score   support
+
+   Anger       0.92      0.01      0.02      1459
+     Bad       0.00      0.00      0.00      1810
+  Digust       0.00      0.00      0.00       206
+    Fear       0.85      0.78      0.81     12716
+   Happy       0.88      0.51      0.64      7672
+     Sad       0.64      0.96      0.77     16902
+Surprise       0.00      0.00      0.00       844
+
+accuracy                           0.72     41609
+macro avg       0.47      0.32      0.32     41609
+weighted avg       0.71      0.72      0.68     41609</code></pre></div>
+</li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/d63e90c7905873d607ffdf459df78d8f/a0209/pipe.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 82.43243243243244%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsSAAALEgHS3X78AAADq0lEQVQ4y22U7U9bZRjG+VP8xsboC6UtBfoS2AZMZ/QDG9HoBs4wAbvyUlgUTWayF7MvqHHJvphtitkUYeiGM/ugWfxituimm5owC7S0tPQN+gJtoeXn/ZxCmIknufLc5+Q8v1znuu/nVNTV1dHQ0EBvn5sh7zADg14Gh4bpHxjE7emnu/eUJlX3uQewNHRQazvKKc+QqB+7o5HaWrvIic1mpcJiseBwOPDNhygUYb2wxfrGFvlNWJN6IZZnbjlHTu7DsRz1LeOYm66yJM+jiVUOHTpAle5FdMYO6utNZaDT6cS3UAZm80UBlQRcIiP17NIafwezJDKbLISz1Ld/jeXlG4QTBZYF2NbahM7SgaH+DWx1hl3g07mA5iy9ViAlyoillWyBh74V7s8m8AnskdTNp3/G5b3HYjzH0nKctpYm9PbXqWnqwWbRbwNdLuYDSwiv7E6KnCibL2nunvgzRNOb+MSt/dgUtlcniKxsEE2maD3gouZAF+bDHmxm/a7DWZ+/7HB9Q5NymFrbIJ6Rjam8ZFgiGEmhq71Ipe4c/lBaMk3Qut8lsDexHRmkzlRdBrrE4Vwg9F+Hmwpe5Mbdecbv+FhdKxJbzdM3couTQ9PEU2WHB5ucNLa/hevYCBajAE0mk3R5J0M0dyrD3EaRYDSLrn2KypcmJK8sm+LySSDNY39KGlZiMRzjYLOL5lf6eL57FLNBgGazuZzh4hIyGZpDNS7SYJLS2dFLvzE09oC7j2Pcm11h8kGY6V/DSBIsx1fZ73JwuNPNEff7mHT7tufw2S6v73Y5pXVcxiW2Ruf4X7R/9gcjM0+58NM80ewmoUiMJpeTo90eurxnMFZXUWHdzvBZhwqspJyq+Qsm8lz5JcwnP/p57YPvOXH2jjRLMpUMXQ47x3vkVL1zFr0Cqk9WJ+X/5lCtyXSeRCpHsbTF8vIqhkove57z4A+uEIkncQrwpNvL8HvnqN63d2dsXHJSglpumdwGWYGpE6Oggeg685EssXSBf4IprC98iqnlY0ISgzp6dnsjfZ5h3j1zYReoHAYjcdRV3JZMkDZGf4YKPPLnCSS3tLrtw99pOf+QZF4mIpsToB3v6VHOXxyjau8eydBq1R5e++JLbs38wM1vb3PzuxmmRVNSX742yaUrk1y9Ps3lzydxnPgIe9cY1ydv89XEN9qf6nhnFz29b6PX66iw2WwoGQx6kUGTcWc1yiovqVWpxmjEXGPAaq6RzXrtPbVXfaXqhar/BYyylAaQJvzgAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="fig:"
+        title="fig:"
+        src="/static/d63e90c7905873d607ffdf459df78d8f/fcda8/pipe.png"
+        srcset="/static/d63e90c7905873d607ffdf459df78d8f/12f09/pipe.png 148w,
+/static/d63e90c7905873d607ffdf459df78d8f/e4a3f/pipe.png 295w,
+/static/d63e90c7905873d607ffdf459df78d8f/fcda8/pipe.png 590w,
+/static/d63e90c7905873d607ffdf459df78d8f/a0209/pipe.png 725w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p><code class="language-text">MultinomialNB and .Pipeline with CountVectorizer, TfidfTransformer, MultinomialNB have accuracy  0.7892 and 0.7225.</code></p>
+<h3>The Deep Learning models used are:</h3>
+<h4>CNN model:</h4>
+<ul>
+<li>Deep learning algorithms with CNN is expected to work well with text classification</li>
+<li>
+<p>CNN with and complied using loss = ‘categorical_crossentropy’ , optimizer = adam , metrics = accuracy
+Model: </p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+embedding_1 (Embedding)      (None, 157, 500)          54695500  
+_________________________________________________________________
+conv1d_1 (Conv1D)            (None, 157, 128)          192128    
+_________________________________________________________________
+conv1d_2 (Conv1D)            (None, 157, 64)           24640     
+_________________________________________________________________
+conv1d_3 (Conv1D)            (None, 157, 32)           4128      
+_________________________________________________________________
+conv1d_4 (Conv1D)            (None, 157, 16)           1040      
+_________________________________________________________________
+flatten_1 (Flatten)          (None, 2512)              0         
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 2512)              0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 100)               251300    
+_________________________________________________________________
+dropout_2 (Dropout)          (None, 100)               0         
+_________________________________________________________________
+dense_2 (Dense)              (None, 7)                 707       
+=================================================================
+Total params: 55,169,443
+Trainable params: 55,169,443
+Non* trainable params: 0</code></pre></div>
+<p><code class="language-text">trained the model which produced Accuracy: 84.063542, Loss: 45.061589. Which is less the ML models.</code></p>
+</li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/8217a171c47bae506806defcadef9a9e/8ae3e/cnn.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 83.1081081081081%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAIAAABSJhvpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADAUlEQVQ4y12TO2tcRxTHFwxuUqVx6e/gIkWIq3yDNEnnBJxCjSrbBAeChdQIEkiIAsGBYFtubD1wYmNFgWAJjFDQKqvIK1mrXela+969u3fe75m763N1ZRA+xTDMzO/8z2sK43c2OrU0TWHlnA8GA4wxQgjWEMLpfTo6vc1fw1LI91EXf/bLxu2lV0xoIgxhspewahNFHXLSxScx32ug1lBwaZS2zvvv5p5Srgu5n/Kb3pXpta/ulYiwRHlhAlbhsMOjga60aaUr/otQPdFce2Ud0F9MLYP3Qh4zE2q/lT3aa7LjWBk/ipkr1+mfu72Jxf27G42jnmgho9xIWw/w1z+vDajKYUhSCOWQ8NsRqvYE0F1ito+SR8XW5w92flx/c9imjUzZKZMpT/6+iYU9C7s9pLP/1B4W20g4LL12KZKh0pWvIeAT/LKWzG+dFBvYhTHAzodvHm8nLFcepfU+ml49uL/V5MoxHaT1PaJf/N8sRcN2onYa5N5mVKxjbYPUGTzzrIyELkAbFJg2XaIS6ZjyTEFjxqubtQsf3bo+s2zTcY/axlAmwkmb5spza1VufAZLKYEW2hk3otJR5QH++9/aB598++XUwmEDVVskpppIz6DaBtgwv3nMlMnChsFgXBCZBQxlAGVpw4Dq4w65+0fx4se3J394BqXBWVAZDHrPd+tC2zOYCwkwNykWLoepCm48Xlo/+PDTqYnZJ/tR/7iNIWwJeYewUe1an571WUgFmgAz6YRJYRi4DkNm+ljD+W9LG4XL125+vwwvudQhpLsRDIM9g6XSuTKVGQbKTKddrFtID81o/q/Spas37vy6otLxkCqY8ForMdZlsHOWMA4Y0QFex9wpl0KFt47Q83L/zsrrhZ12H0lo2OJ2q9zE0NvmgIZ0lMGQA+ScUAGta8Y0JopJ3cOydDRYr8Q/vThY3e9gpiod+rTUqLQRIDGixr4LG4xSCl6EkM452HvvCaFamwQTmEc4h9QQJvApcz0oc+H8fz6/yV3ACLz34cfn7C3f+5x0jeI9KQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="fig:"
+        title="fig:"
+        src="/static/8217a171c47bae506806defcadef9a9e/fcda8/cnn.png"
+        srcset="/static/8217a171c47bae506806defcadef9a9e/12f09/cnn.png 148w,
+/static/8217a171c47bae506806defcadef9a9e/e4a3f/cnn.png 295w,
+/static/8217a171c47bae506806defcadef9a9e/fcda8/cnn.png 590w,
+/static/8217a171c47bae506806defcadef9a9e/8ae3e/cnn.png 756w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h4>Bidirectional LSTM model:</h4>
+<ul>
+<li>removed the spatial dropout layer as it decreases the accuracy of the model, which is inferred from training</li>
+<li>
+<p>CNN with and complied using loss = ‘categorical_crossentropy’ , optimizer = adam , metrics = accuracy</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">Layer (type)                    Output Shape         Param #     Connected to                     
+==================================================================================================
+input_1 (InputLayer)            [(None, 157)]        0                                            
+__________________________________________________________________________________________________
+embedding (Embedding)           (None, 157, 500)     54695500    input_1[0][0]                    
+__________________________________________________________________________________________________
+bidirectional (Bidirectional)   (None, 157, 256)     644096      embedding[0][0]                  
+__________________________________________________________________________________________________
+conv1d (Conv1D)                 (None, 155, 64)      49216       bidirectional[0][0]              
+__________________________________________________________________________________________________
+global_average_pooling1d (Globa (None, 64)           0           conv1d[0][0]                     
+__________________________________________________________________________________________________
+global_max_pooling1d (GlobalMax (None, 64)           0           conv1d[0][0]                     
+__________________________________________________________________________________________________
+concatenate (Concatenate)       (None, 128)          0           global_average_pooling1d[0][0]   
+                                                             global_max_pooling1d[0][0]       
+__________________________________________________________________________________________________
+dense (Dense)                   (None, 7)            903         concatenate[0][0]                
+==================================================================================================
+Total params: 55,389,715
+Trainable params: 55,389,715
+Non-trainable params: 0</code></pre></div>
+</li>
+</ul>
+<p><code class="language-text">The Bidirectional LSTM has the highest accuracy of all the models Accuracy: 86.488497, Loss: 36.384022</code></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/126eeb9613e7e7a1114488a1fd549d61/d67ca/lstm.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 85.8108108108108%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAIAAABSJhvpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADIUlEQVQ4y02TW4scRRTH+1PsF1DRDyKITz4JPvmkECHgBWTRh7BiHoSQEELEh3jJKgY2ygoxWTSbLGKSdbMz7k4SdHZ2Z8ZJunumr1Vd96qu6u6cnlkWz0Nzuqp+dS71P14zN6FtzrUpXV3XprQ5QmmW5TnKclQQ4lxlXQXfqq6rqoLzjCv48eq6aWr7ydrfLy9v/NYLOVcpkXFO/IQOnmWTqJjM0HBG90dpiASmkkkF8Luf/Rjl1Kvqxhm5vLb/yqebv/ZmGTU5t1TZlLtJIsLCPM34MJa9SRFRS2UplAH4zZV1P8YeeLYs/ZSGSH6z47+//qTrE2uraWHGEd8apFe2R7sT7KciY+UJ/PaFO35CWlhrTbhsqubqbvDe9UfbE8xkGSA9mrE7B8lX9462x/kooik1RJgFfOrKdlzIFlZSznLu52qcysOIbg6S73ZGj0OKqBln8iAkv/eTL+8dPZpSqSyfwx9d60xzdgwHKRvFIiGGcAPw5T8POxMcJOxZrqa5un0Qn9vq7wVEabeAz/zSizD3lFJGayo0Ua4QNiUmYaZQ7uNLG0uvrqxu9Mq6CbH+L+VIWKbsIu0Lm30kjCda41Qori3wCVFMO9h+5+zP3gunLq39pWyd0xIzzbUruF7A3z44Qkwed5tLI8saCxsVmuoK/GFYPB7GH168tfTa51dv7YMaiHQnkdf3xpjPYUppwSRswAsHmaCqgq7KslXS6XM3vBdPn792H1qFWHkS+Y9+KI1tYWct1MxNRZVDvARHgK+rQton42zn3+nyxRsvvX7mh5tduA8KBGRvGAttjt8ZU0FECXBOFcBEaKarpFBEWjjwwRc/eUtvnV+9C9kQ3sJ90J1UoO1aSlCslqYKsRlMoasOcs6FC5DqT/nuCN//Z3r34eD7B5OV2+Otgxhg0HzpqhZmjCLCC6aGEesM0wgCMjnF6jDE3TG+2fUHM6aNXd0N3/i6c737FOAgwTCD3mIkuRCMc+h5hhnjklIYHlNQgagI4pwpw4X0M9oZgq50qyttwI5hN7d6btZa8KEWjJFWql1v2vXKWWht8z97DoTTlZCGwDpDAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="fig:"
+        title="fig:"
+        src="/static/126eeb9613e7e7a1114488a1fd549d61/fcda8/lstm.png"
+        srcset="/static/126eeb9613e7e7a1114488a1fd549d61/12f09/lstm.png 148w,
+/static/126eeb9613e7e7a1114488a1fd549d61/e4a3f/lstm.png 295w,
+/static/126eeb9613e7e7a1114488a1fd549d61/fcda8/lstm.png 590w,
+/static/126eeb9613e7e7a1114488a1fd549d61/d67ca/lstm.png 714w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<blockquote>
+<p>I also found from the observation that the LSTM model works better for Sad, Happy, and Fear but the SGDClassifier works better on Anger, Bad, Surprise hence joined the model together making it a stacked model which provided a accuracy:</p>
+<ul>
+<li>Accuracy: 0.883606912</li>
+<li>Precision: 0.8874248006</li>
+<li>Recall: 0.883606912</li>
+<li>F1 Score: 0.8844271224 </li>
+</ul>
+</blockquote>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/0f90d139b445da2bd44f1e144e2d977d/6e9ba/stack.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 85.8108108108108%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAIAAABSJhvpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADEUlEQVQ4y01TS29VVRQ+f8QJhIF/waE/QBIHJMaJcWQcOJAJxQkxDTBxQEDTABIKOqA1BKm0VUFNhNpCoe2F1tJ7vb29j9Pzuvv93mff6zo9pWEl57nXt771fSsrGh/G6ChCKDnnhBBWBYV3+FUf1Al1OtyicPCYf9Z+b2Luu4UtYxwWOhuSQYbb/byf4f0cZ0TtpWzINBVaG2esO399gQkNYMCGqflGdPLm6enn2niiApEOq9BJeS7KnOmEutcxLYSnwhrrpbYfnbubYxHVXXQz+mQr/el5fHa+Ob9VhDDOmO/kanWP/NyI13p0n1gkvTAlMCvjPr30RzpkUcUbAuUCdDzcKU5Nr/+wGittY2qb++zvVnHtcXNpF/ULCWAiTA3+4sYKFiaq7SJcJUS3C93o03uN9MyDnbnNnErfRXonFS+69LfNtJUr7UYA1tafubOGuKrAYGOBeSdjOXNg2IPN7NSttemn/TijMdIJVhs9OvN0bzsRXFW0xvnJX14OqYi898YYoQyYRHWJhOth08bm0uzyux9evDyzJGyIiekOFVKHmgF85a8W1y4yxsI0uZBUGG5CTg3TJbTzze0/oxOfffXtAmjLqUXMCANTsAC23t9a2WXyjWYhNdcewAWzwK9d+C8myy+7564+PP7B+csz/4TxmOnAlAcvnS/vb3SZrDWPAmWSSgvgFKkqSVppIX88eeNRdOLziSuLwDnkFnMrK7BfaqXGlRXYOQfMVDphR0R5aUegDUogYVsDst5Mvp5afOf9iamZx5AsFXRdNjqFMrYCW2sol4RXqhC3UIKrqouManqg/8L3v0bHPpm8uijciAhdlmVzgJU+0AwfXCjQg2XZyWXBvXIByXKA9EafLbxKnrxO17f7Py53v7y/8/u/KQjtD6UvQ81sMWWIqpTo7R5OsCZcZ8zsJnR1F82utBs9CvOfXdv/+PaLucYAICnixtpDt0EGJhTWBapoY4WQ4CoiFPpPhgQzgTEtqNzqpkzbis+Baz462mZo/mi34VJKF0VhjK51VacHKz1+K/4HE3qZoGUcHf8AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="fig:"
+        title="fig:"
+        src="/static/0f90d139b445da2bd44f1e144e2d977d/fcda8/stack.png"
+        srcset="/static/0f90d139b445da2bd44f1e144e2d977d/12f09/stack.png 148w,
+/static/0f90d139b445da2bd44f1e144e2d977d/e4a3f/stack.png 295w,
+/static/0f90d139b445da2bd44f1e144e2d977d/fcda8/stack.png 590w,
+/static/0f90d139b445da2bd44f1e144e2d977d/6e9ba/stack.png 731w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Preprocess:<br>
+<a href="https://colab.research.google.com/drive/1NZBf4iDojvel3dHeU9AYzWWt5XM8Eggr">https://colab.research.google.com/drive/1NZBf4iDojvel3dHeU9AYzWWt5XM8Eggr</a><br>
+MachineLearning:<br>
+<a href="https://colab.research.google.com/drive/1UI4LPO9BfrkJYXEVudsii7XRXeVJXvJJ#scrollTo=HP6QeD8vzjKc">https://colab.research.google.com/drive/1UI4LPO9BfrkJYXEVudsii7XRXeVJXvJJ#scrollTo=HP6QeD8vzjKc</a><br>
+Deep Learning:<br>
+<a href="https://colab.research.google.com/drive/1gauXKeBIN9Piln_2_OxmLsk5g8U9f1f-#scrollTo=TKyIf6PhJRfE">https://colab.research.google.com/drive/1gauXKeBIN9Piln_2_OxmLsk5g8U9f1f-#scrollTo=TKyIf6PhJRfE</a><br>
+Stacked Model:<br>
+<a href="https://colab.research.google.com/drive/191BIy6tGDRfIi6eKNFhLM2IN7quwFdyr#scrollTo=ROunJKQlz_Lr">https://colab.research.google.com/drive/191BIy6tGDRfIi6eKNFhLM2IN7quwFdyr#scrollTo=ROunJKQlz_Lr</a><br></p></section><hr style="margin-bottom:1.75rem"/><footer><div style="display:flex;margin-bottom:4.375rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQCBf/EABcBAAMBAAAAAAAAAAAAAAAAAAABAwL/2gAMAwEAAhADEAAAAerHdBPV7QU+iiwA/8QAHBAAAQQDAQAAAAAAAAAAAAAAAgABAxEEEiEQ/9oACAEBAAEFAj4EJHupNWDGq03fGX//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AR//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/AR//xAAbEAEAAgIDAAAAAAAAAAAAAAABABECMRAgUf/aAAgBAQAGPwJTcpyUfeG43vr/AP/EABsQAAMBAQADAAAAAAAAAAAAAAABESExEEFx/9oACAEBAAE/IWfqDD4Azzw1PkGiWdIhk7pIh210/9oADAMBAAIAAwAAABCcMAD/xAAWEQEBAQAAAAAAAAAAAAAAAAABESD/2gAIAQMBAT8QJHH/xAAVEQEBAAAAAAAAAAAAAAAAAAAgIf/aAAgBAgEBPxCj/8QAHBABAAMAAwEBAAAAAAAAAAAAAQARITFBYXHR/9oACAEBAAE/EOCVpV0/IwC5sC1V2J84ibFIqLB2+q9hAXM7SfuzWiJ5FmgFoT2UQDiJNm9T/9k=" alt="Antony J Malakkaran" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/static/c98da4cb78546a914ba63af4b725eb8c/99438/profile-pic.jpg 1x,
+/static/c98da4cb78546a914ba63af4b725eb8c/aba1d/profile-pic.jpg 1.5x,
+/static/c98da4cb78546a914ba63af4b725eb8c/b315d/profile-pic.jpg 2x" /><img loading="lazy" width="50" height="50" srcset="/static/c98da4cb78546a914ba63af4b725eb8c/99438/profile-pic.jpg 1x,
+/static/c98da4cb78546a914ba63af4b725eb8c/aba1d/profile-pic.jpg 1.5x,
+/static/c98da4cb78546a914ba63af4b725eb8c/b315d/profile-pic.jpg 2x" src="/static/c98da4cb78546a914ba63af4b725eb8c/99438/profile-pic.jpg" alt="Antony J Malakkaran" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div> <p>Written by <strong> <!-- -->Antony J Malakkaran<!-- --> </strong> <!-- -->a UntoldFreeThinker, who Creates usefull Applications for Web<!-- --> <!-- --> <!-- --> <br/><a href="https://github.com/antonyjm462">: GitHub : </a> <a href="https://www.linkedin.com/in/antonyjmalakkaran/">: Linkedin : </a><a href="mailto:antonyjm462@gmail.com">: Say Hello :</a></p> </div></footer></article><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/week_1/">← <!-- -->Emotion Analysis using Machine Learning Part-1</a></li><li><a rel="next" href="/week_3/">Deploy Machine Learning Model for simple use.<!-- --> →</a></li></ul></nav></main><footer>© <!-- -->2021<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.org">Gatsby</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/week_2/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-34ca29c9931feaab74f2.js"],"component---src-pages-404-js":["/component---src-pages-404-js-50205e4e99371a0751f6.js"],"component---src-pages-index-tsx":["/component---src-pages-index-tsx-c8754662282af222e758.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-6158fc8786a9c9dce156.js"]};/*]]>*/</script><script src="/component---src-templates-blog-post-js-6158fc8786a9c9dce156.js" async=""></script><script src="/fab8c9364b01cebfd3503fc18011994750f493ff-d25fbae8f7d6eabbd1ba.js" async=""></script><script src="/commons-b32845a8a656907c13ef.js" async=""></script><script src="/app-34ca29c9931feaab74f2.js" async=""></script><script src="/styles-ae6d046c35c187471a06.js" async=""></script><script src="/framework-81e6052b3504df28bf0b.js" async=""></script><script src="/webpack-runtime-83cf6434f4daf4b28b58.js" async=""></script></body></html>
